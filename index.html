@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethical Hacker Portfolio</title>
+    <meta name="description" content="Professional Ethical Hacker & Cybersecurity Specialist Portfolio">
+    <meta name="author" content="Ethical Hacker">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+                <span class="brand-text">
+                    <span class="brand-ethical">Ethical</span>Hacker
+                </span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link" data-page="home">Home</a>
+                <a href="#certificates" class="nav-link" data-page="certificates">Certificates</a>
+                <a href="#experience" class="nav-link" data-page="experience">Experience</a>
+                <a href="#projects" class="nav-link" data-page="projects">Projects</a>
+                <a href="#contact" class="nav-link" data-page="contact">Contact</a>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <main id="main-content">
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="matrix-bg">
+                    <div class="matrix-text">
+                        01001000 01100101 01101100 01101100 01101111 00100000 01010111 01101111 01110010 01101100 01100100
+                    </div>
+                </div>
+                
+                <div class="hero-content">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <svg class="terminal-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="4,17 10,11 4,5"></polyline>
+                                <line x1="12" y1="19" x2="20" y2="19"></line>
+                            </svg>
+                            <span class="terminal-prompt">root@security:~$</span>
+                        </div>
+                        <div class="terminal-body">
+                            <span class="command">whoami</span>
+                            <div class="output">
+                                <span class="prompt-symbol">&gt; </span>
+                                <span id="typing-text"></span>
+                                <span class="cursor">|</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h1 class="hero-title">
+                        <span class="gradient-text">PRIVACY</span><br>
+                        <span class="white-text">IS A</span><br>
+                        <span class="cyan-text glow">MYTH</span>
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        Penetration Testing • Vulnerability Assessment • CTF Player
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn-primary" data-page="projects">View My Work</a>
+                        <a href="#contact" class="btn-secondary" data-page="contact">Get In Touch</a>
+                    </div>
+                </div>
+
+                <div class="scroll-indicator">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6,9 12,15 18,9"></polyline>
+                    </svg>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="about">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title gradient-text">About Me</h2>
+                        <p class="section-subtitle">
+                            Dedicated to protecting digital assets through ethical hacking and cybersecurity expertise
+                        </p>
+                    </div>
+
+                    <div class="about-grid">
+                        <div class="terminal-about">
+                            <h3 class="terminal-title">$ cat about.txt</h3>
+                            <div class="terminal-content">
+                                <p><span class="prompt">&gt;</span> Passionate cybersecurity professional with extensive experience in ethical hacking, penetration testing, and vulnerability assessment.</p>
+                                <p><span class="prompt">&gt;</span> Committed to helping organizations strengthen their security posture through responsible disclosure and comprehensive security testing.</p>
+                                <p><span class="prompt">&gt;</span> Continuous learner staying updated with the latest security threats, tools, and defensive techniques.</p>
+                                <p><span class="prompt">&gt;</span> Believer in using technology for good and making the digital world safer for everyone.</p>
+                            </div>
+                        </div>
+
+                        <div class="competencies">
+                            <h3 class="competencies-title">Core Competencies</h3>
+                            <div class="competency-item">
+                                <svg class="competency-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                </svg>
+                                <div>
+                                    <h4>Ethical Hacking</h4>
+                                    <p>Authorized penetration testing to identify and fix security vulnerabilities</p>
+                                </div>
+                            </div>
+                            <div class="competency-item">
+                                <svg class="competency-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <path d="m21 21-4.35-4.35"></path>
+                                </svg>
+                                <div>
+                                    <h4>Vulnerability Assessment</h4>
+                                    <p>Systematic identification and prioritization of security weaknesses</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Certificates Page -->
+        <div id="certificates" class="page">
+            <section class="certificates-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title gradient-text">Certificates & Skills</h2>
+                        <p class="section-subtitle">
+                            My hobbies, campus leadership, and technical expertise
+                        </p>
+                    </div>
+
+                    <div class="certificates-grid">
+                        <!-- Hobbies Section -->
+                       <div class="certificate-card">
+    <h3 class="terminal-title">$ ls -la hobbies</h3>
+    <div class="hobby-list">
+        <div class="hobby-item">
+            <svg class="hobby-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+            <span>Capture The Flag (CTF) Competitions</span>
+        </div>
+        <div class="hobby-item">
+            <svg class="hobby-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14,2 14,8 20,8"></polyline>
+            </svg>
+            <span>Security Research & Blogging</span>
+        </div>
+        <div class="hobby-item">
+            <svg class="hobby-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M12 1v6m0 6v6"></path>
+                <path d="m21 12-6 0m-6 0-6 0"></path>
+            </svg>
+            <span>Open Source Security Tools Development</span>
+        </div>
+        <div class="hobby-item">
+            <svg class="hobby-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M4 4h16v4H4z"></path>
+            </svg>
+            <span>Writing Poems</span>
+        </div>
+    </div>
+</div>
+
+
+                        <!-- Campus Leadership Section -->
+                        <div class="certificate-card">
+                            <h3 class="terminal-title">$ cat leadership.txt</h3>
+                            <div class="leadership-list">
+                                <div class="leadership-item">
+                                    <h4>Outreach Member-TedxCusat</h4>
+                                    <p>Engaged in community outreach, partnerships, and promotions to expand TEDx event visibility and participation.</p>
+                                    <span class="date">2025</span>
+                                </div>
+                                <div class="leadership-item">
+                                    <h4>HR Manager - Seds Cusat</h4>
+                                    <p>Oversee recruitment, member engagement, and coordination for club activities.</p>
+                                    <span class="date">2024-</span>
+                                </div>
+                                <div class="leadership-item">
+                                    <h4>Tinkerhub Member</h4>
+                                    <p>Engaged in coding challenges, hackathons, and peer-learning sessions to develop technical and problem-solving skills.</p>
+                                    <span class="date">2023-2027</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Technical Skills Section -->
+                        <div class="certificate-card full-width">
+                            <h3 class="terminal-title">$ ./show_skills.sh</h3>
+                            <div class="skills-categories">
+                                <div class="skill-category">
+                                    <h4>Penetration Testing</h4>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">Web Application Testing</span>
+                                        <span class="skill-tag">Network Penetration</span>
+                                        <span class="skill-tag">Wireless Security</span>
+                                        <span class="skill-tag">Social Engineering</span>
+                                    </div>
+                                </div>
+                                <div class="skill-category">
+                                    <h4>Security Tools</h4>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">Metasploit</span>
+                                        <span class="skill-tag">Burp Suite</span>
+                                        <span class="skill-tag">Nmap</span>
+                                        <span class="skill-tag">Wireshark</span>
+                                        <span class="skill-tag">OWASP ZAP</span>
+                                        <span class="skill-tag">Nessus</span>
+                                    </div>
+                                </div>
+                                <div class="skill-category">
+                                    <h4>Programming Languages</h4>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">Python</span>
+                                        <span class="skill-tag">JavaScript</span>
+                                        <span class="skill-tag">PowerShell</span>
+                                        <span class="skill-tag">C/C++</span>
+                                        <span class="skill-tag">SQL</span>
+                                    </div>
+                                </div>
+                                <div class="skill-category">
+                                    <h4>Operating Systems</h4>
+                                    <div class="skill-tags">
+                                        <span class="skill-tag">Kali Linux</span>
+                                        <span class="skill-tag">Windows</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Experience Page -->
+        <div id="experience" class="page">
+            <section class="experience-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title gradient-text">Experience</h2>
+                        <p class="section-subtitle">
+                            Professional journey, education, and certifications
+                        </p>
+                    </div>
+
+                    <div class="experience-grid">
+                        <!-- Professional Experience -->
+                        <div class="experience-card">
+                            <h3 class="terminal-title">$ cat professional_experience.log</h3>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-date">2023 - Present</div>
+                                    <div class="timeline-content">
+                                        <h4>Senior Penetration Tester</h4>
+                                        <p class="company">CyberSec Solutions Inc.</p>
+                                        <ul>
+                                            <li>Led penetration testing engagements for Fortune 500 companies</li>
+                                            <li>Identified and responsibly disclosed 50+ critical vulnerabilities</li>
+                                            <li>Developed custom security assessment tools and methodologies</li>
+                                            <li>Mentored junior team members and conducted security training</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-date">2022 - 2023</div>
+                                    <div class="timeline-content">
+                                        <h4>Junior Security Analyst</h4>
+                                        <p class="company">SecureNet Technologies</p>
+                                        <ul>
+                                            <li>Performed vulnerability assessments and security audits</li>
+                                            <li>Assisted in incident response and forensic investigations</li>
+                                            <li>Created security documentation and compliance reports</li>
+                                            <li>Participated in red team exercises</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-date">2021 - 2022</div>
+                                    <div class="timeline-content">
+                                        <h4>Cybersecurity Intern</h4>
+                                        <p class="company">TechGuard Corp</p>
+                                        <ul>
+                                            <li>Supported security monitoring and threat detection</li>
+                                            <li>Learned industry best practices and security frameworks</li>
+                                            <li>Assisted with security awareness training programs</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Educational Experience -->
+                        <div class="experience-card">
+                            <h3 class="terminal-title">$ ls -la education/</h3>
+                            <div class="education-list">
+                                <div class="education-item">
+                                    <div class="edu-header">
+                                        <h4>Bachelor of Science in Cybersecurity</h4>
+                                        <span class="date">2020 - 2024</span>
+                                    </div>
+                                    <p class="institution">University of Technology</p>
+                                    <p class="details">Magna Cum Laude • GPA: 3.8/4.0</p>
+                                    <div class="coursework">
+                                        <h5>Relevant Coursework:</h5>
+                                        <ul>
+                                            <li>Ethical Hacking & Penetration Testing</li>
+                                            <li>Network Security & Cryptography</li>
+                                            <li>Digital Forensics & Incident Response</li>
+                                            <li>Secure Software Development</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="education-item">
+                                    <div class="edu-header">
+                                        <h4>Associate Degree in Computer Science</h4>
+                                        <span class="date">2018 - 2020</span>
+                                    </div>
+                                    <p class="institution">Community College of Technology</p>
+                                    <p class="details">Summa Cum Laude • GPA: 3.9/4.0</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Certifications -->
+                        <div class="experience-card full-width">
+                            <h3 class="terminal-title">$ cat certifications.json</h3>
+                            <div class="certifications-grid">
+                                <div class="cert-item">
+                                    <div class="cert-badge">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="cert-details">
+                                        <h4>Certified Ethical Hacker (CEH)</h4>
+                                        <p>EC-Council • Valid: 2023-2026</p>
+                                    </div>
+                                </div>
+                                <div class="cert-item">
+                                    <div class="cert-badge">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="3"></circle>
+                                            <path d="M12 1v6m0 6v6"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="cert-details">
+                                        <h4>Offensive Security Certified Professional (OSCP)</h4>
+                                        <p>Offensive Security • Valid: 2023-2026</p>
+                                    </div>
+                                </div>
+                                <div class="cert-item">
+                                    <div class="cert-badge">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                        </svg>
+                                    </div>
+                                    <div class="cert-details">
+                                        <h4>Certified Information Systems Security Professional (CISSP)</h4>
+                                        <p>(ISC)² • Valid: 2024-2027</p>
+                                    </div>
+                                </div>
+                                <div class="cert-item">
+                                    <div class="cert-badge">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="cert-details">
+                                        <h4>CompTIA Security+</h4>
+                                        <p>CompTIA • Valid: 2022-2025</p>
+                                    </div>
+                                </div>
+                                <div class="cert-item">
+                                    <div class="cert-badge">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="11" cy="11" r="8"></circle>
+                                            <path d="m21 21-4.35-4.35"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="cert-details">
+                                        <h4>GIAC Certified Incident Handler (GCIH)</h4>
+                                        <p>SANS/GIAC • Valid: 2023-2027</p>
+                                    </div>
+                                </div>
+                                <div class="cert-item">
+                                    <div class="cert-badge">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="cert-details">
+                                        <h4>Certified Information Security Manager (CISM)</h4>
+                                        <p>ISACA • Valid: 2024-2027</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- Bug Bounty Achievements -->
+                <div class="experience-card full-width">
+                <h3 class="terminal-title">$ cat bug_bounty_achievements.json</h3>
+    <div class="certifications-grid">
+        <div class="cert-item">
+            <div class="cert-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2l4 4-4 4-4-4z"></path>
+                </svg>
+            </div>
+            <div class="cert-details">
+                <h4>Hall of Fame - Google VRP</h4>
+                <p>Recognized for critical vulnerability • 2024</p>
+            </div>
+        </div>
+        <div class="cert-item">
+            <div class="cert-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 6v6l4 2"></path>
+                </svg>
+            </div>
+            <div class="cert-details">
+                <h4>Top 100 - HackerOne</h4>
+                <p>Resolved 30+ valid reports • 2023</p>
+            </div>
+        </div>
+        <div class="cert-item">
+            <div class="cert-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                </svg>
+            </div>
+            <div class="cert-details">
+                <h4>Bugcrowd MVP</h4>
+                <p>Awarded for outstanding performance • 2023</p>
+            </div>
+        </div>
+        <div class="cert-item">
+            <div class="cert-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                </svg>
+            </div>
+            <div class="cert-details">
+                <h4>Responsible Disclosure - Microsoft</h4>
+                <p>Reported XSS & SQLi vulnerabilities • 2022</p>
+            </div>
+        </div>
+    </div>
+    </div>
+ 
+            </section>
+        </div>
+        
+        
+
+        <!-- Projects Page -->
+        <div id="projects" class="page">
+            <section class="projects-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title gradient-text">Featured Projects</h2>
+                        <p class="section-subtitle">
+                            Real-world security engagements and research initiatives
+                        </p>
+                    </div>
+
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-header">
+                                <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                </svg>
+                                <div>
+                                    <span class="project-type">Penetration Testing</span>
+                                    <h3 class="project-title">Corporate Network Penetration Test</h3>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Comprehensive security assessment of enterprise network infrastructure, identifying critical vulnerabilities and providing detailed remediation strategies.
+                            </p>
+                            <div class="project-tech">
+                                <h4>Technologies Used:</h4>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Nmap</span>
+                                    <span class="tech-tag">Metasploit</span>
+                                    <span class="tech-tag">Burp Suite</span>
+                                    <span class="tech-tag">Custom Scripts</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <div class="project-impact">
+                                    <h4>Impact:</h4>
+                                    <p>12 Critical vulnerabilities identified and patched</p>
+                                </div>
+                                <button class="project-link">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15,3 21,3 21,9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-header">
+                                <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="m8 6 4-4 4 4"></path>
+                                    <path d="m8 18 4 4 4-4"></path>
+                                    <path d="m4 12 4-4 4 4-4 4-4-4"></path>
+                                    <path d="m16 12 4-4 4 4-4 4-4-4"></path>
+                                </svg>
+                                <div>
+                                    <span class="project-type">Web Security</span>
+                                    <h3 class="project-title">Web Application Security Audit</h3>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Full-scale security audit of e-commerce platform, focusing on OWASP Top 10 vulnerabilities and business logic flaws.
+                            </p>
+                            <div class="project-tech">
+                                <h4>Technologies Used:</h4>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">OWASP ZAP</span>
+                                    <span class="tech-tag">Burp Suite</span>
+                                    <span class="tech-tag">SQLMap</span>
+                                    <span class="tech-tag">Custom Tools</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <div class="project-impact">
+                                    <h4>Impact:</h4>
+                                    <p>Prevented potential $2M+ in damages</p>
+                                </div>
+                                <button class="project-link">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15,3 21,3 21,9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-header">
+                                <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <path d="m21 21-4.35-4.35"></path>
+                                </svg>
+                                <div>
+                                    <span class="project-type">Research</span>
+                                    <h3 class="project-title">IoT Device Security Research</h3>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Research project analyzing security vulnerabilities in consumer IoT devices, documenting attack vectors and defense mechanisms.
+                            </p>
+                            <div class="project-tech">
+                                <h4>Technologies Used:</h4>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Firmware Analysis</span>
+                                    <span class="tech-tag">Hardware Hacking</span>
+                                    <span class="tech-tag">Reverse Engineering</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <div class="project-impact">
+                                    <h4>Impact:</h4>
+                                    <p>3 CVEs discovered and responsibly disclosed</p>
+                                </div>
+                                <button class="project-link">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15,3 21,3 21,9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-header">
+                                <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                    <circle cx="12" cy="16" r="1"></circle>
+                                    <path d="m7 11 0-4a5 5 0 0 1 10 0v4"></path>
+                                </svg>
+                                <div>
+                                    <span class="project-type">Red Team</span>
+                                    <h3 class="project-title">Red Team Exercise</h3>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Led comprehensive red team engagement simulating advanced persistent threat scenarios for Fortune 500 company.
+                            </p>
+                            <div class="project-tech">
+                                <h4>Technologies Used:</h4>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Social Engineering</span>
+                                    <span class="tech-tag">Physical Security</span>
+                                    <span class="tech-tag">Custom Malware</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <div class="project-impact">
+                                    <h4>Impact:</h4>
+                                    <p>Improved incident response time by 60%</p>
+                                </div>
+                                <button class="project-link">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15,3 21,3 21,9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-header">
+                                <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14,2 14,8 20,8"></polyline>
+                                </svg>
+                                <div>
+                                    <span class="project-type">Tool Development</span>
+                                    <h3 class="project-title">Custom Security Scanner</h3>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Developed automated vulnerability scanner for web applications with custom detection modules and reporting capabilities.
+                            </p>
+                            <div class="project-tech">
+                                <h4>Technologies Used:</h4>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Selenium</span>
+                                    <span class="tech-tag">BeautifulSoup</span>
+                                    <span class="tech-tag">Custom Modules</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <div class="project-impact">
+                                    <h4>Impact:</h4>
+                                    <p>Open-sourced with 500+ stars on GitHub</p>
+                                </div>
+                                <button class="project-link">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15,3 21,3 21,9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-header">
+                                <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                                <div>
+                                    <span class="project-type">Training</span>
+                                    <h3 class="project-title">Security Awareness Program</h3>
+                                </div>
+                            </div>
+                            <p class="project-description">
+                                Designed and implemented comprehensive security awareness training program for enterprise employees with practical exercises.
+                            </p>
+                            <div class="project-tech">
+                                <h4>Technologies Used:</h4>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Phishing Simulations</span>
+                                    <span class="tech-tag">Interactive Modules</span>
+                                    <span class="tech-tag">Assessment Tools</span>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <div class="project-impact">
+                                    <h4>Impact:</h4>
+                                    <p>Reduced security incidents by 40%</p>
+                                </div>
+                                <button class="project-link">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                        <polyline points="15,3 21,3 21,9"></polyline>
+                                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+                </div>
+            </section>
+        </div>
+
+        <!-- Contact Page -->
+        <div id="contact" class="page">
+            <section class="contact-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title gradient-text">Get In Touch</h2>
+                        <p class="section-subtitle">
+                            Ready to secure your digital assets? Let's secure it together.
+                        </p>
+                    </div>
+
+                    <div class="contact-grid">
+                        <div class="contact-info">
+                            <div class="contact-terminal">
+                                <h3 class="terminal-title">$ contact --info</h3>
+                                <div class="contact-details">
+                                    <div class="contact-item">
+                                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                            <polyline points="22,6 12,13 2,6"></polyline>
+                                        </svg>
+                                        <span><span class="label">email:</span> sumittraj2027@gmail.com</span>
+                                    </div>
+                                    <div class="contact-item">
+                                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                            <circle cx="12" cy="16" r="1"></circle>
+                                            <path d="m7 11 0-4a5 5 0 0 1 10 0v4"></path>
+                                        </svg>
+                                        <span><span class="label">pgp:</span> Available upon request</span>
+                                    </div>
+                                    <div class="contact-item">
+                                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                        </svg>
+                                        <span><span class="label">response:</span> Within 24 hours</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="services-list">
+                                <h3>Services Available</h3>
+                                <ul>
+                                    <li><span>&gt;</span> Penetration Testing</li>
+                                    <li><span>&gt;</span> Vulnerability Assessments</li>
+                                    <li><span>&gt;</span> Security Audits</li>
+                                    <li><span>&gt;</span> Incident Response</li>
+                                </ul>
+                            </div>
+                        </div>
+
+             <div class="contact-form-container">
+    <h3 class="terminal-title">$ send --message</h3>
+    <form id="contact-form" class="contact-form">
+        <div class="form-group">
+            <label for="name">
+                <svg class="form-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+                Name
+            </label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+        </div>
+
+        <div class="form-group">
+            <label for="email">
+                <svg class="form-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                Email
+            </label>
+            <input type="email" id="email" name="email" required placeholder="your.email@gmail.com">
+        </div>
+
+        <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required placeholder="Security consultation request">
+        </div>
+
+        <div class="form-group">
+            <label for="message">
+                <svg class="form-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+                Message
+            </label>
+            <textarea id="message" name="message" required rows="5" placeholder="Describe your security requirements..."></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22,2 15,22 11,13 2,9 22,2"></polygon>
+            </svg>
+            Send Encrypted Message
+        </button>
+    </form>
+</div>
+
+<div class="contact-footer">
+                        <p>
+                            <svg class="lock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <circle cx="12" cy="16" r="1"></circle>
+                                <path d="m7 11 0-4a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                            All communications are encrypted and handled with strict confidentiality
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Toast notification -->
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    
+<script>
+    (function(){
+        emailjs.init("0V9Sejp14_Y1I_zLn"); // Replace with your EmailJS public key
+    })();
+</script>
+                            <script>
+                            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                                event.preventDefault();
+                            
+                                emailjs.send("service_t5vsefi", "template_bkxb1je", {
+                                    from_name: document.getElementById('name').value,
+                                    from_email: document.getElementById('email').value,
+                                    subject: document.getElementById('subject').value,
+                                    message: document.getElementById('message').value
+                                })
+                                .then(function(response) {console.log(response);
+                                    alert("✅ Message sent successfully!");
+                                }, function(error) {
+                                    alert("❌ Failed to send message. Please try again.");
+                                    console.log(error);
+                                });
+                            });
+                            </script>
+</body>
+</html>
