@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const navbar = document.getElementById('navbar');
     const navToggle = document.getElementById('nav-toggle');
     const navMenu = document.getElementById('nav-menu');
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentPage = 'home';
 
     // Navbar scroll effect
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
         } else {
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Mobile menu toggle
-    navToggle.addEventListener('click', function() {
+    navToggle.addEventListener('click', function () {
         navMenu.classList.toggle('active');
         navToggle.classList.toggle('active');
     });
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (targetPage) {
             targetPage.classList.add('active');
             currentPage = pageId;
-            
+
             // Update active nav link
             navLinks.forEach(link => {
                 link.classList.remove('active');
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Navigation links event listeners
     navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', function (e) {
             e.preventDefault();
             const pageId = this.getAttribute('data-page');
             if (pageId) {
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Hero buttons event listeners
     document.querySelectorAll('[data-page]').forEach(button => {
-        button.addEventListener('click', function(e) {
+        button.addEventListener('click', function (e) {
             e.preventDefault();
             const pageId = this.getAttribute('data-page');
             if (pageId) {
@@ -96,9 +96,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById('contact-form');
 
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+        contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
-            
+
             // Get form data
             const formData = new FormData(this);
             const data = {
@@ -110,10 +110,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Simulate form submission
             console.log('Form submitted:', data);
-            
+
             // Show success toast
             showToast('Message encrypted and sent successfully!');
-            
+
             // Reset form
             this.reset();
         });
@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function showToast(message) {
         toast.textContent = message;
         toast.classList.add('show');
-        
+
         setTimeout(() => {
             toast.classList.remove('show');
         }, 3000);
@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function() {
         rootMargin: '0px 0px -50px 0px'
     };
 
-    const observer = new IntersectionObserver(function(entries) {
+    const observer = new IntersectionObserver(function (entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.style.opacity = '1';
@@ -156,9 +156,9 @@ document.addEventListener('DOMContentLoaded', function() {
     function createMatrixRain() {
         const matrixContainer = document.querySelector('.matrix-bg');
         if (!matrixContainer) return;
-        
+
         const characters = '01';
-        
+
         for (let i = 0; i < 50; i++) {
             const column = document.createElement('div');
             column.style.position = 'absolute';
@@ -169,13 +169,13 @@ document.addEventListener('DOMContentLoaded', function() {
             column.style.fontFamily = 'JetBrains Mono, monospace';
             column.style.animation = `fall ${Math.random() * 3 + 2}s linear infinite`;
             column.style.animationDelay = Math.random() * 2 + 's';
-            
+
             let text = '';
             for (let j = 0; j < 20; j++) {
                 text += characters[Math.floor(Math.random() * characters.length)];
             }
             column.textContent = text;
-            
+
             matrixContainer.appendChild(column);
         }
     }
@@ -202,13 +202,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add glitch effect to terminal text occasionally
     function addGlitchEffect() {
         const terminalElements = document.querySelectorAll('.terminal-title, .terminal-prompt');
-        
+
         setInterval(() => {
             if (Math.random() > 0.95) {
                 const randomElement = terminalElements[Math.floor(Math.random() * terminalElements.length)];
                 if (randomElement) {
                     randomElement.style.textShadow = '2px 0 #ff0000, -2px 0 #00ffff';
-                    
+
                     setTimeout(() => {
                         randomElement.style.textShadow = '';
                     }, 100);
@@ -220,17 +220,96 @@ document.addEventListener('DOMContentLoaded', function() {
     addGlitchEffect();
 
     // Handle browser back/forward buttons
-    window.addEventListener('popstate', function(e) {
+    window.addEventListener('popstate', function (e) {
         const page = e.state?.page || 'home';
         showPage(page);
     });
 
     // Initialize with home page
     showPage('home');
-    
+
     // Update history state
     history.replaceState({ page: 'home' }, '', '#home');
+
+    // Initialize Background Animation (Canvas Injection)
+    initCyberBackground();
 });
+
+// Cyber Background Animation Manager
+function initCyberBackground() {
+    // 1. Inject Canvas
+    const canvas = document.createElement('canvas');
+    canvas.id = 'cyber-bg-canvas';
+    Object.assign(canvas.style, {
+        position: 'fixed',
+        top: '0',
+        left: '0',
+        width: '100%',
+        height: '100%',
+        zIndex: '-1', // Behind content, above grid
+        pointerEvents: 'none',
+        opacity: '0.6'
+    });
+    document.body.appendChild(canvas);
+
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+    let animationFrameId;
+
+    // 2. Resize Handler
+    function resize() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        initParticles();
+    }
+    window.addEventListener('resize', resize);
+    resize();
+
+    // 3. Particle System
+    function initParticles() {
+        particles = [];
+        const particleCount = Math.floor(window.innerWidth / 15); // Density
+
+        for (let i = 0; i < particleCount; i++) {
+            particles.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                size: Math.random() * 2 + 0.5,
+                speedX: (Math.random() - 0.5) * 0.5,
+                speedY: (Math.random() - 0.5) * 0.5,
+                opacity: Math.random() * 0.5 + 0.1
+            });
+        }
+    }
+
+    function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        // Update and draw particles
+        ctx.fillStyle = '#00ff41'; // Cyber green
+
+        particles.forEach(p => {
+            // Move
+            p.x += p.speedX;
+            p.y += p.speedY;
+
+            // Wrap around screen
+            if (p.x < 0) p.x = canvas.width;
+            if (p.x > canvas.width) p.x = 0;
+            if (p.y < 0) p.y = canvas.height;
+            if (p.y > canvas.height) p.y = 0;
+
+            // Draw
+            ctx.globalAlpha = p.opacity;
+            ctx.fillRect(p.x, p.y, p.size, p.size); // Square "bits"
+        });
+
+        ctx.globalAlpha = 1.0;
+        animationFrameId = requestAnimationFrame(animate);
+    }
+
+    animate();
+}
 
 // Console easter egg
 console.log(`
